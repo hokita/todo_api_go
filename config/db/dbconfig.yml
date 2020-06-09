@@ -1,0 +1,5 @@
+development:
+    dialect: postgres
+    datasource: host=db dbname=todo_development user=app password=app-pass sslmode=disable
+    dir: ./config/db/migrations
+    table: migrations
