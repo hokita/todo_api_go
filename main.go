@@ -25,7 +25,7 @@ func main() {
 	api := rest.NewApi()
 	api.Use(rest.DefaultDevStack...)
 	router, err := rest.MakeRouter(
-		rest.Get("/coutries", controllers.GetAllCountries),
+		rest.Get("/countries", controllers.GetAllCountries),
 	)
 	if err != nil {
 		log.Fatal(err)
